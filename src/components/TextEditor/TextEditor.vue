@@ -53,9 +53,9 @@ import TaskItem from '@tiptap/extension-task-item'
 import TaskList from '@tiptap/extension-task-list'
 import NamedColorExtension from './extensions/color'
 import NamedHighlightExtension from './extensions/highlight'
-import { common, createLowlight } from 'lowlight'
-import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight'
-import CodeBlockComponent from './CodeBlockComponent.vue'
+// import { common, createLowlight } from 'lowlight'
+// import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight'
+// import CodeBlockComponent from './CodeBlockComponent.vue'
 import { MentionExtension } from './extensions/mention'
 import TextEditorFixedMenu from './TextEditorFixedMenu.vue'
 import TextEditorBubbleMenu from './TextEditorBubbleMenu.vue'
@@ -69,7 +69,7 @@ import { ImageGroup } from './extensions/image-group/image-group-extension'
 import { useFileUpload } from '../../utils/useFileUpload'
 import { TextEditorEmits, TextEditorProps } from './types'
 
-const lowlight = createLowlight(common)
+// const lowlight = createLowlight(common)
 
 function defaultUploadFunction(file: File) {
   // useFileUpload is frappe specific
@@ -180,11 +180,11 @@ onMounted(() => {
       TextStyle,
       NamedColorExtension,
       NamedHighlightExtension,
-      CodeBlockLowlight.extend({
-        addNodeView() {
-          return VueNodeViewRenderer(CodeBlockComponent)
-        },
-      }).configure({ lowlight }),
+      // CodeBlockLowlight.extend({
+      //   addNodeView() {
+      //     return VueNodeViewRenderer(CodeBlockComponent)
+      //   },
+      // }).configure({ lowlight }),
       ImageExtension.configure({
         uploadFunction: props.uploadFunction || defaultUploadFunction,
       }),
