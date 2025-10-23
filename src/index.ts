@@ -70,7 +70,7 @@ export { default as FrappeUIProvider } from './components/Provider/FrappeUIProvi
 export { default as Sidebar } from './components/Sidebar/Sidebar.vue'
 
 // grid layout
-export { default as GridLayout } from './components/VueGridLayout/Layout.vue'
+// export { default as GridLayout } from './components/VueGridLayout/Layout.vue'
 
 // chart components
 export { default as AxisChart } from './components/Charts/AxisChart.vue'
